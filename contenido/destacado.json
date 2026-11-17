@@ -1,31 +1,101 @@
 {
-  "titulo": "Caso: sistema para Strong Gym",
-  "contexto": "Un gimnasio de Puruándiro llevaba socios, pagos y ventas en libretas. Necesitaba saber quién entra, quién debe y qué se vende, aunque se vaya el internet.",
-  "solucion": "Hice un sistema que corre en la computadora de recepción y se sincroniza con una copia en la nube. Así el dueño consulta todo desde su celular y los socios ven su membresía en un portal.",
+  "titulo": "Caso: Sistema Integral de Gestión de Strong Gym",
+  "contexto": "Un gimnasio de Puruándiro llevaba socios, pagos y ventas en libretas. Necesitaba saber quién entra, quién debe y qué se vende, aunque se fuera el internet.",
+  "solucion": "Lideré al equipo CodeDMF en el Proyecto Integrador 2026. Hicimos un sistema híbrido: la recepción trabaja en local y se sincroniza sola con la nube, el dueño consulta todo desde cualquier lugar y cada socio ve su membresía en el celular.",
   "funciones": [
-    { "titulo": "Acceso con QR", "texto": "El socio pasa su credencial y la pantalla se pone verde, naranja o roja según su membresía, con su foto para confirmar que es él." },
-    { "titulo": "Funciona sin internet", "texto": "Recepción guarda todo en local y se sincroniza con la nube cada 60 segundos. Si algo se editó en ambos lados, gana el cambio más reciente." },
-    { "titulo": "Tres roles", "texto": "Administrador con acceso completo, dueño de solo lectura (validado en el servidor) y portal del socio con días restantes, QR y pagos." },
-    { "titulo": "Ventas e inventario", "texto": "Punto de venta, alertas de stock bajo, movimientos de caja y bitácora de quién hizo cada cambio." },
-    { "titulo": "Sitio web editable", "texto": "Planes, promociones y malteadas se editan desde el sistema, sin tocar código." },
-    { "titulo": "Seguridad y respaldo", "texto": "Contraseñas con scrypt, cookies HttpOnly, límite de intentos, CSP, respaldo diario y pruebas automáticas de punta a punta." }
+    {
+      "titulo": "Acceso con QR",
+      "texto": "Credencial QR con lector o cámara y foto del socio. Las credenciales se imprimen o se descargan para enviarlas por WhatsApp."
+    },
+    {
+      "titulo": "Operación diaria",
+      "texto": "Socios, membresías, visitas, punto de venta, inventario, promociones y página web pública en un solo sistema."
+    },
+    {
+      "titulo": "Panel del dueño",
+      "texto": "Ingresos del día, asistencias, productos más vendidos y bitácora de movimientos, consultable desde cualquier lugar."
+    },
+    {
+      "titulo": "Portal del socio",
+      "texto": "En el celular: días restantes, su QR, asistencias con meta semanal y promociones."
+    },
+    {
+      "titulo": "Funciona sin internet",
+      "texto": "Arquitectura híbrida local + nube con sincronización automática mediante un servicio en Python."
+    },
+    {
+      "titulo": "Segundo cliente",
+      "texto": "Tras su implementación, Gold's Gym Puruándiro también adoptó el sistema."
+    }
   ],
   "ficha": [
-    { "dato": "Backend", "valor": "Node.js 22 con servidor HTTP propio, sin frameworks" },
-    { "dato": "Base de datos", "valor": "SQLite integrado en Node.js" },
-    { "dato": "Frontend", "valor": "HTML, CSS y JavaScript; instalable como app (PWA)" },
-    { "dato": "Despliegue", "valor": "Docker y Render, con disco persistente" },
-    { "dato": "Pruebas", "valor": "node:test, levanta recepción y nube y revisa la sincronización" },
-    { "dato": "Tamaño", "valor": "Cerca de 5,000 líneas de código" }
+    {
+      "dato": "Mi rol",
+      "valor": "Líder de desarrollo, equipo CodeDMF"
+    },
+    {
+      "dato": "Proyecto",
+      "valor": "Integrador 2026 · TecNM – ITS Puruándiro"
+    },
+    {
+      "dato": "Backend",
+      "valor": "Node.js y Netlify Functions (API con 45 servicios)"
+    },
+    {
+      "dato": "Base de datos",
+      "valor": "PostgreSQL en Supabase (20 tablas)"
+    },
+    {
+      "dato": "Sincronización",
+      "valor": "Servicio en Python entre recepción y nube"
+    },
+    {
+      "dato": "Estado",
+      "valor": "Concluido y en uso"
+    }
   ],
   "capturas": [
-    { "imagen": "media/proyectos/sg-panel.jpg", "pie": "Panel: ingresos del día, asistencias, más vendidos y membresías por vencer." },
-    { "imagen": "media/proyectos/sg-acceso.jpg", "pie": "Acceso: lector QR USB, cámara o búsqueda por nombre." },
-    { "imagen": "media/proyectos/sg-ventas.jpg", "pie": "Punto de venta con existencias y formas de pago." },
-    { "imagen": "media/proyectos/sg-clientes.jpg", "pie": "Clientes con filtros por estado e impresión de credenciales." },
-    { "imagen": "media/proyectos/sg-sitio.jpg", "pie": "Sitio web público, editable desde el sistema." }
+    {
+      "imagen": "media/proyectos/sg-panel.jpg",
+      "pie": "Panel: ingresos del día, asistencias, más vendidos y membresías por vencer."
+    },
+    {
+      "imagen": "media/proyectos/sg-acceso.jpg",
+      "pie": "Acceso: lector QR USB, cámara o búsqueda por nombre."
+    },
+    {
+      "imagen": "media/proyectos/sg-ventas.jpg",
+      "pie": "Punto de venta con existencias y formas de pago."
+    },
+    {
+      "imagen": "media/proyectos/sg-clientes.jpg",
+      "pie": "Clientes con filtros por estado e impresión de credenciales."
+    },
+    {
+      "imagen": "media/proyectos/sg-sitio.jpg",
+      "pie": "Sitio web público, editable desde el sistema."
+    }
   ],
   "nota": "Las capturas usan datos de demostración.",
-  "link": "https://strongweb1.netlify.app",
-  "link_texto": "Ver el sitio web"
+  "link": "https://strong-gym-puruandiro.netlify.app/",
+  "link_texto": "Ver la página de Strong Gym",
+  "numeros": [
+    {
+      "numero": 20,
+      "texto": "tablas en la base de datos"
+    },
+    {
+      "numero": 45,
+      "texto": "servicios en la API"
+    },
+    {
+      "numero": 2,
+      "texto": "gimnasios lo usan hoy"
+    }
+  ],
+  "arquitectura": {
+    "local": "Recepción del gym. Funciona sin internet, con lector QR y base local.",
+    "flujo": "Sincronización automática (Python)",
+    "nube": "PostgreSQL en Supabase y Netlify Functions. Panel del dueño y portal del socio."
+  }
 }

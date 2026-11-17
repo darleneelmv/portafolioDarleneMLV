@@ -6,8 +6,8 @@
   "rol": "Estudiante de Ingeniería en TIC. Desarrollo web full stack y nube.",
   "disponibilidad": "Disponible para residencia profesional desde enero de 2027",
   "saludo": "Hola, soy Darlene.",
-  "intro": "Estudio Ingeniería en Tecnologías de la Información y Comunicación y construyo sistemas completos: diseño la base de datos, programo el backend y la interfaz, y lo dejo publicado en la nube para que alguien lo use en su trabajo diario.",
-  "foto": "media/darlene.jpg",
+  "intro": "Estudio Ingeniería en Tecnologías de la Información y Comunicación y construyo sistemas completos: diseño la base de datos, programo el backend y la interfaz, y los dejo funcionando en la nube. Mi proyecto principal hoy lo usan dos gimnasios.",
+  "foto": "media/darlene-principal.jpg",
   "boton_1": "Ver proyectos",
   "boton_2": "Descargar CV",
   "cv": "cv/CV_Darlene_Lopez_Vazquez.pdf",
@@ -18,12 +18,11 @@
   "whatsapp": "524381113112",
   "github": "https://github.com/darleneelmv",
   "linkedin": "https://www.linkedin.com/in/darlene-mariah-lopez-v%C3%A1zquez-5829a833a",
-  "ventana_titulo": "Proyectos funcionando",
   "ventana": [
     {
       "pestana": "Strong Gym",
       "imagen": "media/proyectos/sg-panel.jpg",
-      "texto": "Sistema de recepción, membresías y ventas para un gimnasio de Puruándiro.",
+      "texto": "Sistema integral de gestión en uso en Strong Gym y Gold's Gym Puruándiro.",
       "etiqueta": "Cliente real",
       "destino": "#destacado"
     },
@@ -48,5 +47,37 @@
       "etiqueta": "Proyecto personal",
       "destino": "#proyectos"
     }
-  ]
+  ],
+  "stickers": [
+    "Node.js",
+    "PostgreSQL",
+    "Python",
+    "React",
+    "Supabase",
+    "</>"
+  ],
+  "cinta1": [
+    "Desarrollo full stack",
+    "Bases de datos",
+    "Nube",
+    "APIs REST",
+    "Sistemas que se usan de verdad",
+    "Ingeniería en TIC"
+  ],
+  "cinta2": [
+    "Node.js",
+    "JavaScript",
+    "PostgreSQL",
+    "Supabase",
+    "Python",
+    "React",
+    "ASP.NET",
+    "SQL Server",
+    "Netlify Functions",
+    "Git"
+  ],
+  "sello": "Ingeniería en TIC ✦ Desarrollo web ✦ Nube ✦ ",
+  "palabra_fondo": "DARLENE",
+  "vitrina_titulo": "Proyectos funcionando",
+  "vitrina_texto": "Toca una pestaña para ver cada proyecto."
 }

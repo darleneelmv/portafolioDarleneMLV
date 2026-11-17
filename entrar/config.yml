@@ -33,10 +33,15 @@ collections:
           - { name: nombre_completo, label: "Nombre completo", widget: string, required: false }
           - { name: iniciales, label: "Iniciales (logo)", widget: string, required: false }
           - { name: disponibilidad, label: "Aviso de disponibilidad", widget: string, required: false, hint: "Déjalo vacío para ocultarlo." }
-          - { name: saludo, label: "Saludo grande", widget: string, hint: "Tu nombre debe aparecer aquí para que la foto salga junto a él." }
+          - { name: saludo, label: "Saludo grande", widget: string, hint: "Tu nombre sale en rojo." }
           - { name: rol, label: "Rol (debajo del saludo)", widget: string }
           - { name: intro, label: "Presentación breve", widget: text }
-          - { name: foto, label: "Foto (sale junto a tu nombre)", widget: image, required: false }
+          - { name: foto, label: "Foto principal", widget: image, required: false, hint: "Vertical. Se recorta en forma de arco." }
+          - { name: palabra_fondo, label: "Palabra gigante del fondo", widget: string, required: false }
+          - { name: sello, label: "Texto del sello que gira", widget: string, required: false }
+          - { name: stickers, label: "Etiquetas que se arrastran", widget: list, field: { name: s, label: "Etiqueta", widget: string }, hint: "Máximo 8, cortitas." }
+          - { name: cinta1, label: "Cinta roja", widget: list, field: { name: p, label: "Texto", widget: string } }
+          - { name: cinta2, label: "Cinta negra", widget: list, field: { name: p, label: "Texto", widget: string } }
           - { name: boton_1, label: "Botón 1", widget: string }
           - { name: boton_2, label: "Botón 2 (descarga el CV)", widget: string }
           - { name: cv, label: "CV en PDF", widget: file, required: false, hint: "Sube tu CV actualizado en PDF." }
@@ -47,7 +52,8 @@ collections:
           - { name: whatsapp, label: "WhatsApp (con 52, solo números)", widget: string, required: false }
           - { name: github, label: "Link de GitHub", widget: string, required: false }
           - { name: linkedin, label: "Link de LinkedIn", widget: string, required: false }
-          - { name: ventana_titulo, label: "Título interno de la ventana", widget: string, required: false }
+          - { name: vitrina_titulo, label: "Título de la ventana de proyectos", widget: string, required: false }
+          - { name: vitrina_texto, label: "Texto bajo el título", widget: string, required: false }
           - name: ventana
             label: "Pestañas de la ventana de proyectos"
             label_singular: "pestaña"
@@ -93,7 +99,21 @@ collections:
         fields:
           - { name: titulo, label: "Título", widget: string }
           - { name: contexto, label: "El reto", widget: text }
-          - { name: solucion, label: "Lo que hice", widget: text }
+          - { name: solucion, label: "Lo que hicimos", widget: text }
+          - name: numeros
+            label: "Números grandes"
+            widget: list
+            summary: "{{fields.numero}} {{fields.texto}}"
+            fields:
+              - { name: numero, label: "Número", widget: number }
+              - { name: texto, label: "Texto", widget: string }
+          - name: arquitectura
+            label: "Diagrama recepción ↔ nube"
+            widget: object
+            fields:
+              - { name: local, label: "Recepción", widget: string }
+              - { name: flujo, label: "Flecha", widget: string }
+              - { name: nube, label: "Nube", widget: string }
           - name: capturas
             label: "Capturas"
             label_singular: "captura"
@@ -208,7 +228,7 @@ collections:
         label: "✨ Lo que aporto"
         file: contenido/aporto.json
         fields:
-          - { name: cita, label: "Frase grande", widget: text }
+          - { name: cita, label: "Frase grande", widget: text, hint: "Se ilumina palabra por palabra al bajar. Pon *palabras* entre asteriscos para que salgan en rojo." }
           - name: razones
             label: "Razones"
             label_singular: "razón"
@@ -253,6 +273,7 @@ collections:
             label: "Secciones visibles"
             widget: object
             fields:
+              - { name: vitrina, label: "Ventana de proyectos", widget: boolean, default: true }
               - { name: experiencia, label: "Experiencia", widget: boolean, default: true }
               - { name: destacado, label: "Caso destacado", widget: boolean, default: true }
               - { name: proyectos, label: "Proyectos personales", widget: boolean, default: true }
@@ -265,10 +286,10 @@ collections:
             label: "Colores"
             widget: object
             fields:
-              - { name: tinta, label: "Texto y sección oscura", widget: color }
-              - { name: petroleo, label: "Color principal", widget: color }
-              - { name: acento, label: "Acento (rosa)", widget: color }
-              - { name: fondo, label: "Fondo", widget: color }
+              - { name: tinta, label: "Negro (texto y secciones oscuras)", widget: color }
+              - { name: rojo, label: "Rojo principal", widget: color }
+              - { name: rosa, label: "Rosa (detalles)", widget: color }
+              - { name: fondo, label: "Fondo claro", widget: color }
           - { name: boton_barra, label: "Botón de la barra de arriba", widget: string }
           - { name: pie, label: "Texto del pie de página", widget: string }
           - name: seo

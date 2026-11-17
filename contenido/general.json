@@ -4,12 +4,13 @@
     "descripcion": "Portafolio de Darlene López Vázquez, estudiante de Ingeniería en TIC. Sistemas web full stack, bases de datos y despliegue en la nube. Disponible para residencia profesional desde enero de 2027."
   },
   "colores": {
-    "tinta": "#10262e",
-    "petroleo": "#1f6377",
-    "acento": "#d9486f",
-    "fondo": "#eef2f1"
+    "tinta": "#141114",
+    "rojo": "#e1262d",
+    "rosa": "#f6b3be",
+    "fondo": "#f7f3f2"
   },
   "secciones": {
+    "vitrina": true,
     "experiencia": true,
     "destacado": true,
     "proyectos": true,

@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#eef2f1">
+<meta name="theme-color" content="#121014">
 <title>Darlene López Vázquez · Ingeniería en TIC · Desarrollo web y nube</title>
-<meta name="description" content="Portafolio de Darlene López Vázquez, estudiante de Ingeniería en TIC. Sistemas web full stack, bases de datos y despliegue en la nube. Disponible para residencia profesional desde enero de 2027.">
+<meta name="description" content="Portafolio de Darlene López Vázquez, estudiante de Ingeniería en TIC. Sistemas web full stack, bases de datos y nube. Disponible para residencia profesional desde enero de 2027.">
 <meta property="og:title" content="Darlene López Vázquez · Ingeniería en TIC">
 <meta property="og:description" content="Sistemas web full stack, bases de datos y nube. Disponible para residencia profesional desde enero de 2027.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="media/proyectos/sg-panel.jpg">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%231f6377%22/><text x=%2232%22 y=%2243%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2228%22 fill=%22%23fff%22>DL</text></svg>">
+<meta property="og:image" content="media/darlene-principal.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%23e1262d%22/><text x=%2232%22 y=%2243%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2228%22 fill=%22%23fff%22>DL</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
@@ -19,31 +19,65 @@
 <body class="cargando">
 <a class="saltar" href="#contenido">Saltar al contenido</a>
 
+<!-- Intro: se ve una vez por visita y se puede saltar -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-centro">
+    <span class="intro-logo">DL</span>
+    <span class="intro-nombre">Darlene López</span>
+    <span class="intro-linea"></span>
+  </div>
+  <button class="intro-saltar" type="button" tabindex="-1">Saltar</button>
+</div>
+
 <header class="barra" id="barra">
   <a class="logo" href="#inicio" id="logo" aria-label="Inicio"></a>
   <nav aria-label="Secciones">
     <button class="menu-boton" id="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
     <ul class="menu" id="menu"></ul>
   </nav>
-  <a class="btn btn-tinta btn-chico" id="btn-barra" href="#" download></a>
+  <a class="btn btn-rojo btn-chico" id="btn-barra" href="#" download></a>
 </header>
 
 <main id="contenido">
 <!-- ================= INICIO ================= -->
 <section class="hero" id="inicio">
+  <span class="palabra-fondo" id="palabra-fondo" aria-hidden="true"></span>
   <div class="ancho hero-grid">
     <div class="hero-texto">
       <p class="disponible entra" id="h-disponible"></p>
       <h1 class="entra" id="h-saludo"></h1>
       <p class="rol entra" id="h-rol"></p>
-      <p class="intro entra" id="h-intro"></p>
+      <p class="intro-texto entra" id="h-intro"></p>
       <div class="acciones entra">
-        <a class="btn btn-petroleo" href="#proyectos" id="h-btn1"></a>
-        <a class="btn btn-borde" href="#" id="h-btn2" download></a>
+        <a class="btn btn-rojo magnetico" href="#proyectos" id="h-btn1"></a>
+        <a class="btn btn-claro-borde magnetico" href="#" id="h-btn2" download></a>
       </div>
       <ul class="datos-hero entra" id="h-datos"></ul>
     </div>
-    <figure class="ventana entra" id="ventana" aria-label="Vista previa de proyectos">
+    <div class="retrato entra">
+      <div class="retrato-marco" id="retrato-marco"><div class="retrato-in" id="foto-principal"></div></div>
+      <div class="sello" aria-hidden="true">
+        <svg viewBox="0 0 150 150"><defs><path id="circ" d="M75,75 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0"/></defs>
+          <text><textPath href="#circ" id="sello-texto"></textPath></text></svg>
+        <span class="centro" id="sello-iniciales"></span>
+      </div>
+      <div class="stickers" id="stickers" aria-hidden="true"></div>
+      <p class="pista-stickers" aria-hidden="true">Arrastra las etiquetas</p>
+    </div>
+  </div>
+  <a class="bajar" href="#vitrina" aria-label="Bajar a proyectos"><i></i></a>
+</section>
+
+<div class="cintas" aria-hidden="true">
+  <div class="cinta roja"><div class="cinta-pista" id="cinta1"></div></div>
+  <div class="cinta negra"><div class="cinta-pista inversa" id="cinta2"></div></div>
+</div>
+
+<!-- ================= VITRINA ================= -->
+<section class="vitrina" id="vitrina">
+  <div class="ancho">
+    <header class="cabeza centrada rev"><h2 id="v-titulo"></h2><p id="v-texto"></p></header>
+    <figure class="ventana rev" id="ventana" aria-label="Vista previa de proyectos">
       <div class="ventana-barra">
         <span class="puntos" aria-hidden="true"><i></i><i></i><i></i></span>
         <div class="pestanas" role="tablist" id="pestanas"></div>
@@ -57,7 +91,7 @@
 <!-- ================= EXPERIENCIA ================= -->
 <section class="seccion" id="experiencia">
   <div class="ancho">
-    <header class="cabeza"><h2 id="e-titulo"></h2><p id="e-sub"></p></header>
+    <header class="cabeza rev"><h2 id="e-titulo"></h2><p id="e-sub"></p></header>
     <ol class="linea-tiempo" id="puestos"></ol>
   </div>
 </section>
@@ -65,27 +99,28 @@
 <!-- ================= CASO DESTACADO ================= -->
 <section class="seccion oscura" id="destacado">
   <div class="ancho">
-    <header class="cabeza"><h2 id="d-titulo"></h2></header>
-    <div class="caso-intro">
+    <header class="cabeza rev"><h2 id="d-titulo"></h2></header>
+    <div class="caso-intro rev">
       <div><h3>El reto</h3><p id="d-contexto"></p></div>
-      <div><h3>Lo que hice</h3><p id="d-solucion"></p></div>
+      <div><h3>Lo que hicimos</h3><p id="d-solucion"></p></div>
     </div>
-    <div class="galeria" id="galeria">
+    <div class="numeros rev" id="d-numeros"></div>
+    <div class="galeria rev" id="galeria">
       <div class="galeria-principal" id="galeria-principal"></div>
       <div class="galeria-miniaturas" id="galeria-miniaturas" role="tablist" aria-label="Capturas del sistema"></div>
     </div>
-    <div class="arquitectura" aria-label="Cómo se conecta el sistema">
-      <div class="nodo"><b>Recepción</b><span>Computadora del gym. Funciona sin internet, lector QR y base de datos local.</span></div>
-      <div class="flujo" aria-hidden="true"><span>cada 60 s</span><i></i></div>
-      <div class="nodo"><b>Nube</b><span>Docker en Render. Sitio web, portal del socio y consulta del dueño.</span></div>
+    <div class="arquitectura rev" aria-label="Cómo se conecta el sistema">
+      <div class="nodo"><b>Recepción</b><span id="d-local"></span></div>
+      <div class="flujo" aria-hidden="true"><span id="d-flujo"></span><i><em></em></i></div>
+      <div class="nodo"><b>Nube</b><span id="d-nube"></span></div>
     </div>
     <div class="caso-detalle">
       <ul class="funciones" id="d-funciones"></ul>
-      <aside class="ficha">
+      <aside class="ficha rev">
         <h3>Ficha técnica</h3>
         <dl id="d-ficha"></dl>
         <p class="nota" id="d-nota"></p>
-        <a class="btn btn-claro" id="d-link" target="_blank" rel="noopener"></a>
+        <a class="btn btn-rojo" id="d-link" target="_blank" rel="noopener"></a>
       </aside>
     </div>
   </div>
@@ -94,22 +129,30 @@
 <!-- ================= PROYECTOS PERSONALES ================= -->
 <section class="seccion" id="proyectos">
   <div class="ancho">
-    <header class="cabeza"><h2 id="p-titulo"></h2><p id="p-sub"></p></header>
+    <header class="cabeza rev"><h2 id="p-titulo"></h2><p id="p-sub"></p></header>
     <div class="filtros" id="filtros" role="group" aria-label="Filtrar proyectos"></div>
     <div class="rejilla" id="rejilla"></div>
+  </div>
+</section>
+
+<!-- ================= LO QUE APORTO ================= -->
+<section class="seccion aporto" id="aporto">
+  <div class="ancho">
+    <blockquote class="cita" id="cita"></blockquote>
+    <div class="razones" id="razones"></div>
   </div>
 </section>
 
 <!-- ================= HABILIDADES Y FORMACIÓN ================= -->
 <section class="seccion suave" id="habilidades">
   <div class="ancho">
-    <header class="cabeza"><h2 id="h-titulo"></h2></header>
+    <header class="cabeza rev"><h2 id="h-titulo"></h2></header>
     <div class="habilidades-grid">
       <dl class="grupos" id="grupos"></dl>
       <div class="formacion">
-        <div class="bloque-formacion" id="educacion"></div>
-        <div class="bloque-formacion"><h3>Certificaciones y cursos</h3><ul class="certs" id="certs"></ul></div>
-        <div class="bloque-formacion"><h3>Idiomas</h3><ul class="idiomas" id="idiomas"></ul></div>
+        <div class="bloque-formacion rev" id="educacion"></div>
+        <div class="bloque-formacion rev"><h3>Certificaciones y cursos</h3><ul class="certs" id="certs"></ul></div>
+        <div class="bloque-formacion rev"><h3>Idiomas</h3><ul class="idiomas" id="idiomas"></ul></div>
       </div>
     </div>
   </div>
@@ -120,9 +163,9 @@
   <div class="ancho sobre-grid">
     <div class="fotos" id="fotos"></div>
     <div class="sobre-texto">
-      <h2 id="s-titulo"></h2>
+      <h2 class="rev" id="s-titulo"></h2>
       <div id="s-parrafos"></div>
-      <div class="listas">
+      <div class="listas rev">
         <div><h3 id="s-int-titulo"></h3><ul class="chips" id="s-intereses"></ul></div>
         <div><h3 id="s-apr-titulo"></h3><ul class="pendientes" id="s-aprender"></ul></div>
       </div>
@@ -130,18 +173,10 @@
   </div>
 </section>
 
-<!-- ================= LO QUE APORTO ================= -->
-<section class="seccion suave" id="aporto">
-  <div class="ancho">
-    <blockquote class="cita" id="cita"></blockquote>
-    <div class="razones" id="razones"></div>
-  </div>
-</section>
-
 <!-- ================= CÓMO TRABAJO ================= -->
-<section class="seccion" id="proceso">
+<section class="seccion suave" id="proceso">
   <div class="ancho">
-    <header class="cabeza"><h2 id="pr-titulo"></h2></header>
+    <header class="cabeza rev"><h2 id="pr-titulo"></h2></header>
     <ol class="pasos" id="pasos"></ol>
   </div>
 </section>
@@ -149,13 +184,13 @@
 <!-- ================= CONTACTO ================= -->
 <section class="seccion contacto" id="contacto">
   <div class="ancho">
-    <h2 id="c-titulo"></h2>
-    <p class="sub" id="c-sub"></p>
-    <div class="correo">
+    <h2 class="rev" id="c-titulo"></h2>
+    <p class="sub rev" id="c-sub"></p>
+    <div class="correo rev">
       <a id="correo-texto" href="#"></a>
-      <button class="btn btn-acento btn-chico" id="copiar" type="button"></button>
+      <button class="btn btn-blanco btn-chico" id="copiar" type="button"></button>
     </div>
-    <div class="enlaces" id="enlaces"></div>
+    <div class="enlaces rev" id="enlaces"></div>
   </div>
 </section>
 </main>

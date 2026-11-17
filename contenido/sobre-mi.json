@@ -3,11 +3,17 @@
   "parrafos": [
     "Soy de Puruándiro, Michoacán, y estoy por terminar Ingeniería en TIC. Lo que más disfruto es ver algo que hice funcionando en un negocio de verdad: la recepción de un gimnasio escaneando credenciales o una repostería recibiendo pedidos por WhatsApp.",
     "Aprendo construyendo. Si algo no lo sé, lo investigo, lo pruebo y lo documento para que otra persona pueda usarlo sin depender de mí. Me importa que lo que entrego sea fácil de usar para quien no es técnico.",
-    "Fuera del código entreno en el gym y creo contenido para marcas en TikTok, donde me siguen más de 15 mil personas. Eso me enseñó a explicar ideas con claridad y a cumplir fechas de entrega."
+    "Me gusta conocer cómo trabajan los equipos de tecnología por dentro, como en mi visita a las oficinas de Google en la Ciudad de México. Fuera del código entreno y creo contenido digital, lo que me ha ayudado a explicar ideas con claridad."
   ],
   "fotos": [
-    { "foto": "media/fuera-codigo.jpg", "pie": "Fuera del horario de clases" },
-    { "foto": "media/gym.jpg", "pie": "Mi otro lugar favorito: el gym" }
+    {
+      "foto": "media/google-2.jpg",
+      "pie": "Oficinas de Google, Ciudad de México"
+    },
+    {
+      "foto": "media/google-1.jpg",
+      "pie": "Conociendo cómo trabajan los equipos de tecnología"
+    }
   ],
   "intereses_titulo": "Me interesa",
   "intereses": [

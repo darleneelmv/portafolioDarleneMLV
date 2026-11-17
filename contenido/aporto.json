@@ -1,9 +1,21 @@
 {
-  "cita": "Me gusta que lo que construyo se use de verdad. Si me integro a tu equipo, voy a preguntar, aprender rápido y entregar trabajo que otros puedan mantener.",
+  "cita": "Me gusta que lo que construyo *se use de verdad*. Si me integro a tu equipo, voy a preguntar, aprender rápido y entregar trabajo que *otros puedan mantener*.",
   "razones": [
-    { "titulo": "Termino lo que empiezo", "texto": "Mis proyectos van de la base de datos al despliegue, con instalación, respaldos y pruebas." },
-    { "titulo": "Pienso en quien lo usa", "texto": "Diseño para recepcionistas, dueños de negocio y clientes que no son técnicos." },
-    { "titulo": "Documento", "texto": "Cada repositorio tiene guía de instalación, estructura y solución de problemas comunes." },
-    { "titulo": "Aprendo rápido", "texto": "Aprendí React, Node.js, funciones serverless e IA sobre la marcha, porque cada proyecto lo pedía." }
+    {
+      "titulo": "Termino lo que empiezo",
+      "texto": "Mis proyectos van de la base de datos al despliegue, y siguen funcionando después de entregarlos."
+    },
+    {
+      "titulo": "Pienso en quien lo usa",
+      "texto": "Diseño para recepcionistas, dueños de negocio y clientes que no son técnicos."
+    },
+    {
+      "titulo": "Documento",
+      "texto": "Cada repositorio tiene guía de instalación, estructura y solución de problemas comunes."
+    },
+    {
+      "titulo": "Aprendo rápido",
+      "texto": "Aprendí React, Node.js, funciones serverless e IA sobre la marcha, porque cada proyecto lo pedía."
+    }
   ]
 }

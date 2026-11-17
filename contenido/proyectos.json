@@ -6,8 +6,16 @@
       "nombre": "Rinconcito Dulcesito",
       "resumen": "Sitio de pedidos y panel de administración para una repostería.",
       "descripcion": "El cliente arma su pedido y se genera el mensaje de WhatsApp con el total. En el panel se registran ventas, gastos y productos; calcula la ganancia de cada postre y sugiere el precio según el margen.",
-      "categorias": ["Web", "Full stack"],
-      "tecnologias": ["JavaScript", "Netlify Functions", "API REST", "Almacenamiento en la nube"],
+      "categorias": [
+        "Web",
+        "Full stack"
+      ],
+      "tecnologias": [
+        "JavaScript",
+        "Netlify Functions",
+        "API REST",
+        "Almacenamiento en la nube"
+      ],
       "imagen": "media/proyectos/rinconcito.jpg",
       "codigo": "",
       "demo": "https://stunning-dragon-3ef76c.netlify.app",
@@ -17,8 +25,15 @@
       "nombre": "Devil's XS Garage",
       "resumen": "Sitio y panel de órdenes de servicio para un taller de motos.",
       "descripcion": "El cliente elige un paquete según la cilindrada de su moto y agenda por WhatsApp. El panel lleva órdenes con estados (recibida, en proceso, lista, entregada), gastos e ingresos del mes.",
-      "categorias": ["Web", "Full stack"],
-      "tecnologias": ["JavaScript", "Netlify Functions", "API REST"],
+      "categorias": [
+        "Web",
+        "Full stack"
+      ],
+      "tecnologias": [
+        "JavaScript",
+        "Netlify Functions",
+        "API REST"
+      ],
       "imagen": "media/proyectos/devils-garage.jpg",
       "codigo": "",
       "demo": "https://tubular-haupia-3f2322.netlify.app",
@@ -28,8 +43,18 @@
       "nombre": "Red social educativa",
       "resumen": "Red social para estudiantes del Tec de Puruándiro.",
       "descripcion": "Registro e inicio de sesión con JWT, publicaciones con imagen, reacciones, comentarios, edición de posts y perfil con foto, portada y biografía.",
-      "categorias": ["Full stack", "Bases de datos"],
-      "tecnologias": ["React", "Express", "MySQL", "JWT", "bcrypt", "Multer"],
+      "categorias": [
+        "Full stack",
+        "Bases de datos"
+      ],
+      "tecnologias": [
+        "React",
+        "Express",
+        "MySQL",
+        "JWT",
+        "bcrypt",
+        "Multer"
+      ],
       "imagen": "",
       "codigo": "POST   /api/auth/registrar\nPOST   /api/auth/login\nGET    /api/posts\nPOST   /api/posts\nPUT    /api/posts/:id\nPOST   /api/posts/:id/like\nPOST   /api/posts/:id/comentario\nPUT    /api/usuario/foto-perfil\nPUT    /api/usuario/biografia",
       "demo": "",
@@ -39,8 +64,16 @@
       "nombre": "Asistente Cloud con IA",
       "resumen": "Recomienda productos de tecnología según presupuesto y necesidad.",
       "descripcion": "Una API REST serverless lee el catálogo desde Google Sheets, arma el contexto y le pregunta a Gemini. Guarda el historial de consultas y muestra un dashboard de estadísticas.",
-      "categorias": ["Nube e IA", "Full stack"],
-      "tecnologias": ["React (Vite)", "Netlify Functions", "Google Sheets API", "Gemini API"],
+      "categorias": [
+        "Nube e IA",
+        "Full stack"
+      ],
+      "tecnologias": [
+        "React (Vite)",
+        "Netlify Functions",
+        "Google Sheets API",
+        "Gemini API"
+      ],
       "imagen": "",
       "codigo": "React → API REST → Sheets + Gemini\n\nGET  /productos?categoria=Laptop&max=20000\nPOST /asistente\n     { pregunta, presupuesto, necesidad }\nGET  /estadisticas",
       "demo": "",
@@ -50,8 +83,15 @@
       "nombre": "NEXUS TI · Gestión de usuarios",
       "resumen": "Panel CRUD con métricas, filtros en vivo y exportación.",
       "descripcion": "Alta, consulta, edición y baja de usuarios con validación, filtros por rol y estado sin recargar, exportación a CSV y tema claro u oscuro. Proyecto de Integración de Tecnologías de Información.",
-      "categorias": ["Bases de datos", "Web"],
-      "tecnologias": ["PHP", "MySQL (PDO)", "Bootstrap 5"],
+      "categorias": [
+        "Bases de datos",
+        "Web"
+      ],
+      "tecnologias": [
+        "PHP",
+        "MySQL (PDO)",
+        "Bootstrap 5"
+      ],
       "imagen": "",
       "codigo": "CREATE TABLE usuarios (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  nombre VARCHAR(100) NOT NULL,\n  email VARCHAR(150) NOT NULL,\n  rol VARCHAR(50) DEFAULT 'Usuario',\n  estado ENUM('Activo','Inactivo'),\n  fecha_registro TIMESTAMP\n);",
       "demo": "",
@@ -61,8 +101,16 @@
       "nombre": "Agenda compartida",
       "resumen": "App web para organizar horarios, pendientes y gastos entre dos personas.",
       "descripcion": "Horario semanal editable, checklist diario, ingresos y egresos con gráfica, control de deudas con fechas límite y exportación al calendario del celular. Se sincroniza entre dos teléfonos.",
-      "categorias": ["Nube e IA", "Web"],
-      "tecnologias": ["Cloudflare Workers", "KV", "JavaScript", "PWA"],
+      "categorias": [
+        "Nube e IA",
+        "Web"
+      ],
+      "tecnologias": [
+        "Cloudflare Workers",
+        "KV",
+        "JavaScript",
+        "PWA"
+      ],
       "imagen": "",
       "codigo": "wrangler deploy\n\nWorker  → /api/agenda\nKV      → AGENDA\nSecreto → APP_PIN\n\n✓ Sincronizado en 2 dispositivos",
       "demo": "",
@@ -72,8 +120,16 @@
       "nombre": "Portafolio de creadora UGC",
       "resumen": "Portafolio con videos por categoría y panel para editarlo sin código.",
       "descripcion": "Sitio estático que arma su contenido desde archivos JSON, reproduce videos de TikTok dentro de un celular y se administra desde un panel con inicio de sesión.",
-      "categorias": ["Web"],
-      "tecnologias": ["HTML", "CSS", "JavaScript", "Decap CMS", "Netlify Identity"],
+      "categorias": [
+        "Web"
+      ],
+      "tecnologias": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Decap CMS",
+        "Netlify Identity"
+      ],
       "imagen": "media/proyectos/portafolio-ugc.jpg",
       "codigo": "",
       "demo": "",
