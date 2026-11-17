@@ -3,143 +3,171 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#14040a">
-<title>Darlyn Lova · UGC Creator MX</title>
-<meta name="description" content="UGC Creator en México. Beauty, fitness y lifestyle. Contenido real que hace brillar tu marca.">
-<meta property="og:title" content="Darlyn Lova · UGC Creator MX">
-<meta property="og:description" content="UGC Creator en México. Beauty, fitness y lifestyle.">
+<meta name="theme-color" content="#eef2f1">
+<title>Darlene López Vázquez · Ingeniería en TIC · Desarrollo web y nube</title>
+<meta name="description" content="Portafolio de Darlene López Vázquez, estudiante de Ingeniería en TIC. Sistemas web full stack, bases de datos y despliegue en la nube. Disponible para residencia profesional desde enero de 2027.">
+<meta property="og:title" content="Darlene López Vázquez · Ingeniería en TIC">
+<meta property="og:description" content="Sistemas web full stack, bases de datos y nube. Disponible para residencia profesional desde enero de 2027.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💋</text></svg>">
+<meta property="og:image" content="media/proyectos/sg-panel.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%231f6377%22/><text x=%2232%22 y=%2243%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2228%22 fill=%22%23fff%22>DL</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400;1,6..96,600&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="/css/estilos.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="css/estilos.css">
 </head>
-<body class="sin-js cargando">
-<div class="grano" aria-hidden="true"></div>
-<div class="brillo" aria-hidden="true"></div>
+<body class="cargando">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
 
 <header class="barra" id="barra">
-  <a class="logo" href="#inicio" id="logo"></a>
-  <nav aria-label="Secciones"><ul class="menu" id="menu"></ul></nav>
-  <a class="btn btn-rojo btn-chico" href="#contacto" id="btn-barra"></a>
+  <a class="logo" href="#inicio" id="logo" aria-label="Inicio"></a>
+  <nav aria-label="Secciones">
+    <button class="menu-boton" id="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    <ul class="menu" id="menu"></ul>
+  </nav>
+  <a class="btn btn-tinta btn-chico" id="btn-barra" href="#" download></a>
 </header>
 
-<main>
-<!-- ================= PORTADA ================= -->
+<main id="contenido">
+<!-- ================= INICIO ================= -->
 <section class="hero" id="inicio">
-  <span class="destello" style="left:8%;top:22%;font-size:22px">✦</span>
-  <span class="destello" style="left:46%;top:16%;font-size:14px;animation-delay:-2s">✦</span>
-  <span class="destello" style="right:6%;top:78%;font-size:18px;animation-delay:-4s">✦</span>
-  <span class="destello" style="left:38%;bottom:16%;font-size:12px;animation-delay:-1s">✦</span>
-  <div class="hero-grid">
+  <div class="ancho hero-grid">
     <div class="hero-texto">
-      <span class="etiqueta intro" id="h-etiqueta"></span>
-      <h1 class="intro" id="h-nombre"><span class="l1"></span><span class="l2 leo-texto"></span></h1>
-      <p class="sub intro" id="h-frase"></p>
-      <ul class="chips intro" id="h-temas" aria-label="Temas"></ul>
-      <div class="cta intro">
-        <a class="btn btn-rojo magnetico" href="#portafolio"><span id="h-btn1"></span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-borde magnetico" href="#contacto" id="h-btn2"></a>
+      <p class="disponible entra" id="h-disponible"></p>
+      <h1 class="entra" id="h-saludo"></h1>
+      <p class="rol entra" id="h-rol"></p>
+      <p class="intro entra" id="h-intro"></p>
+      <div class="acciones entra">
+        <a class="btn btn-petroleo" href="#proyectos" id="h-btn1"></a>
+        <a class="btn btn-borde" href="#" id="h-btn2" download></a>
       </div>
-      <div class="stats intro" id="stats"></div>
+      <ul class="datos-hero entra" id="h-datos"></ul>
     </div>
-    <div class="retrato intro">
-      <div class="marco" id="marco"><div class="marco-in" id="foto-principal"></div></div>
-      <div class="sello" aria-hidden="true">
-        <svg viewBox="0 0 150 150"><defs><path id="circ" d="M75,75 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0"/></defs>
-          <text><textPath href="#circ" id="sello-texto"></textPath></text></svg>
-        <span class="centro" id="sello-iniciales"></span>
+    <figure class="ventana entra" id="ventana" aria-label="Vista previa de proyectos">
+      <div class="ventana-barra">
+        <span class="puntos" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="pestanas" role="tablist" id="pestanas"></div>
+      </div>
+      <div class="ventana-pantalla" id="ventana-pantalla"></div>
+      <figcaption class="ventana-pie" id="ventana-pie"></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCIA ================= -->
+<section class="seccion" id="experiencia">
+  <div class="ancho">
+    <header class="cabeza"><h2 id="e-titulo"></h2><p id="e-sub"></p></header>
+    <ol class="linea-tiempo" id="puestos"></ol>
+  </div>
+</section>
+
+<!-- ================= CASO DESTACADO ================= -->
+<section class="seccion oscura" id="destacado">
+  <div class="ancho">
+    <header class="cabeza"><h2 id="d-titulo"></h2></header>
+    <div class="caso-intro">
+      <div><h3>El reto</h3><p id="d-contexto"></p></div>
+      <div><h3>Lo que hice</h3><p id="d-solucion"></p></div>
+    </div>
+    <div class="galeria" id="galeria">
+      <div class="galeria-principal" id="galeria-principal"></div>
+      <div class="galeria-miniaturas" id="galeria-miniaturas" role="tablist" aria-label="Capturas del sistema"></div>
+    </div>
+    <div class="arquitectura" aria-label="Cómo se conecta el sistema">
+      <div class="nodo"><b>Recepción</b><span>Computadora del gym. Funciona sin internet, lector QR y base de datos local.</span></div>
+      <div class="flujo" aria-hidden="true"><span>cada 60 s</span><i></i></div>
+      <div class="nodo"><b>Nube</b><span>Docker en Render. Sitio web, portal del socio y consulta del dueño.</span></div>
+    </div>
+    <div class="caso-detalle">
+      <ul class="funciones" id="d-funciones"></ul>
+      <aside class="ficha">
+        <h3>Ficha técnica</h3>
+        <dl id="d-ficha"></dl>
+        <p class="nota" id="d-nota"></p>
+        <a class="btn btn-claro" id="d-link" target="_blank" rel="noopener"></a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROYECTOS PERSONALES ================= -->
+<section class="seccion" id="proyectos">
+  <div class="ancho">
+    <header class="cabeza"><h2 id="p-titulo"></h2><p id="p-sub"></p></header>
+    <div class="filtros" id="filtros" role="group" aria-label="Filtrar proyectos"></div>
+    <div class="rejilla" id="rejilla"></div>
+  </div>
+</section>
+
+<!-- ================= HABILIDADES Y FORMACIÓN ================= -->
+<section class="seccion suave" id="habilidades">
+  <div class="ancho">
+    <header class="cabeza"><h2 id="h-titulo"></h2></header>
+    <div class="habilidades-grid">
+      <dl class="grupos" id="grupos"></dl>
+      <div class="formacion">
+        <div class="bloque-formacion" id="educacion"></div>
+        <div class="bloque-formacion"><h3>Certificaciones y cursos</h3><ul class="certs" id="certs"></ul></div>
+        <div class="bloque-formacion"><h3>Idiomas</h3><ul class="idiomas" id="idiomas"></ul></div>
       </div>
     </div>
   </div>
-  <a class="bajar" href="#sobre">Desliza<i></i></a>
 </section>
-
-<div class="cinta" aria-hidden="true"><div class="cinta-pista" id="cinta1"></div></div>
-<div class="cinta leo" aria-hidden="true"><div class="cinta-pista" id="cinta2"></div></div>
 
 <!-- ================= SOBRE MÍ ================= -->
-<section class="sobre" id="sobre">
+<section class="seccion" id="sobre">
   <div class="ancho sobre-grid">
-    <div class="polaroids rev" id="polaroids"></div>
+    <div class="fotos" id="fotos"></div>
     <div class="sobre-texto">
-      <div class="titulo rev"><span class="etiqueta" id="s-etiqueta"></span><h2 id="s-titulo"></h2></div>
+      <h2 id="s-titulo"></h2>
       <div id="s-parrafos"></div>
-      <div class="datos rev d3" id="datos"></div>
+      <div class="listas">
+        <div><h3 id="s-int-titulo"></h3><ul class="chips" id="s-intereses"></ul></div>
+        <div><h3 id="s-apr-titulo"></h3><ul class="pendientes" id="s-aprender"></ul></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= PORTAFOLIO ================= -->
-<section class="portafolio" id="portafolio">
+<!-- ================= LO QUE APORTO ================= -->
+<section class="seccion suave" id="aporto">
   <div class="ancho">
-    <div class="titulo centrado rev"><span class="etiqueta" id="p-etiqueta"></span><h2 id="p-titulo"></h2><p id="p-sub"></p></div>
-    <nav class="sectores rev d1" id="sectores" aria-label="Secciones del portafolio"></nav>
-    <div id="bloques"></div>
-  </div>
-</section>
-
-<!-- ================= SERVICIOS ================= -->
-<section class="servicios" id="servicios">
-  <div class="ancho">
-    <div class="titulo rev"><span class="etiqueta" id="sv-etiqueta"></span><h2 id="sv-titulo"></h2><p id="sv-sub"></p></div>
-    <div class="cartas" id="cartas"></div>
-  </div>
-</section>
-
-<!-- ================= POR QUÉ YO ================= -->
-<section class="porque" id="porque">
-  <div class="ancho">
-    <div class="cita rev">
-      <span class="comillas" aria-hidden="true">“</span>
-      <blockquote id="cita"></blockquote>
-    </div>
+    <blockquote class="cita" id="cita"></blockquote>
     <div class="razones" id="razones"></div>
   </div>
 </section>
 
-<!-- ================= PROCESO ================= -->
-<section class="proceso" id="proceso">
+<!-- ================= CÓMO TRABAJO ================= -->
+<section class="seccion" id="proceso">
   <div class="ancho">
-    <div class="titulo centrado rev"><span class="etiqueta" id="pr-etiqueta"></span><h2 id="pr-titulo"></h2></div>
-    <div class="pasos" id="pasos"></div>
-  </div>
-</section>
-
-<!-- ================= MARCAS ================= -->
-<section class="marcas" id="marcas">
-  <div class="ancho">
-    <div class="titulo centrado rev"><span class="etiqueta" id="m-etiqueta"></span><h2 id="m-titulo"></h2></div>
-    <div id="logos" class="rev d1"></div>
+    <header class="cabeza"><h2 id="pr-titulo"></h2></header>
+    <ol class="pasos" id="pasos"></ol>
   </div>
 </section>
 
 <!-- ================= CONTACTO ================= -->
-<section class="contacto" id="contacto">
+<section class="seccion contacto" id="contacto">
   <div class="ancho">
-    <span class="etiqueta rev" id="c-etiqueta"></span>
-    <h2 class="rev d1" id="c-titulo"></h2>
-    <p class="sub rev d2" id="c-sub"></p>
-    <div class="correo rev d3">
-      <span id="correo-texto"></span>
-      <button class="btn btn-rojo btn-chico" id="copiar" type="button">Copiar correo</button>
-      <a class="btn btn-borde btn-chico" id="escribir" href="#">Escribirme</a>
+    <h2 id="c-titulo"></h2>
+    <p class="sub" id="c-sub"></p>
+    <div class="correo">
+      <a id="correo-texto" href="#"></a>
+      <button class="btn btn-acento btn-chico" id="copiar" type="button"></button>
     </div>
-    <div class="redes rev d4" id="redes"></div>
+    <div class="enlaces" id="enlaces"></div>
   </div>
 </section>
 </main>
 
-<footer>
-  <a class="logo" href="#inicio" id="logo-pie"></a>
-  <span id="pie"></span>
+<footer class="pie">
+  <div class="ancho pie-in">
+    <span id="pie"></span>
+    <a href="#inicio">Volver arriba</a>
+  </div>
 </footer>
 <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script src="/js/sitio.js" defer></script>
+<script src="js/sitio.js" defer></script>
 </body>
 </html>

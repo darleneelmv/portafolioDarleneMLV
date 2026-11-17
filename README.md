@@ -1,33 +1,36 @@
-# Portafolio UGC · Darlyn Lova
+# Portafolio de TI · Darlene López Vázquez
 
 Sitio estático (HTML, CSS y JS) publicado en Netlify, con panel de administración en **`/entrar`**.
+Lo uso para mi residencia profesional: experiencia, caso destacado, proyectos personales, habilidades y CV.
+
+> La versión anterior (portafolio UGC) sigue guardada en la rama [`ugc`](../../tree/ugc).
 
 ## Cómo está organizado
 
 | Carpeta | Qué hay |
 |---|---|
 | `index.html` | La página |
-| `css/estilos.css` | Diseño (colores, letras, animaciones) |
-| `js/sitio.js` | Arma la página a partir del contenido y le da movimiento |
-| `contenido/*.json` | **Todo el texto, fotos y videos.** Se edita desde el panel |
-| `media/` | Fotos y videos que subes desde el panel |
+| `css/estilos.css` | Diseño (colores, letras, tamaños) |
+| `js/sitio.js` | Arma la página a partir del contenido y le da interacción |
+| `contenido/*.json` | **Todo el texto, capturas y links.** Se edita desde el panel |
+| `media/` | Fotos y capturas de proyectos |
+| `cv/` | CV en PDF que se descarga desde la página |
 | `entrar/` | Panel de administración (Decap CMS) |
 
 ## Editar el sitio
 
 1. Entra a `https://TU-SITIO.netlify.app/entrar/` e inicia sesión.
-2. Elige qué editar: Videos, Perfil, Sobre mí, Servicios, Marcas, Contacto o Diseño.
+2. Elige qué editar: Perfil, Experiencia, Caso destacado, Proyectos, Habilidades, Sobre mí, Contacto o Diseño.
 3. Cambia lo que quieras y dale **Publicar**. En 1–2 minutos se ve en tu página.
 
 Tips:
-- En los títulos, pon una palabra entre asteriscos (`Mis *videos*`) para que salga en cursiva rosa.
-- Videos: sube el original de tu galería (sin marca de agua), de preferencia de menos de 20 MB.
-- La sección **Marcas** solo aparece cuando agregas al menos una marca.
+- Cada **Publicar** es un despliegue en Netlify y gasta créditos del plan gratis (15 por despliegue, 300 al mes para toda la cuenta). Junta varios cambios antes de publicar.
+- En **Proyectos**, usa siempre los mismos nombres de categoría (Web, Full stack, Nube e IA, Bases de datos) para que los filtros agrupen bien.
+- Si un proyecto no tiene captura, escribe unas líneas en «Código de vista previa» (endpoints, SQL o comandos) y se muestra como terminal.
+- Para cambiar el CV, sube el PDF nuevo en **Perfil → CV en PDF**.
 
-## Configuración de Netlify (una sola vez)
+## Publicar en otro lado (sin Netlify)
 
-1. **Add new site → Import an existing project → GitHub →** este repositorio. Sin comando de build; carpeta de publicación: `.`
-2. **Project configuration → Identity → Enable Identity.**
-3. En Identity → **Registration preferences → Invite only.**
-4. En Identity → **Services → Git Gateway → Enable.**
-5. En la pestaña **Identity → Invite users**, invita tu correo. Abre el correo, crea tu contraseña y listo.
+Todas las rutas son relativas, así que el sitio también funciona en **GitHub Pages**:
+Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)` → Save.
+Queda en `https://darleneelmv.github.io/portafolioUGC/`. El panel `/entrar` solo funciona en Netlify.

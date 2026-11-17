@@ -1,22 +1,9 @@
 {
-  "etiqueta": "Cómo trabajamos",
-  "titulo": "Fácil, de *principio* a fin",
+  "titulo": "Cómo trabajo",
   "pasos": [
-    {
-      "titulo": "Brief",
-      "texto": "Me cuentas tu producto, tu objetivo y el estilo que buscas."
-    },
-    {
-      "titulo": "Producto",
-      "texto": "Me envías el producto y acordamos guion, tomas y fecha."
-    },
-    {
-      "titulo": "Grabación",
-      "texto": "Grabo y edito con subtítulos, música y tu estética."
-    },
-    {
-      "titulo": "Entrega",
-      "texto": "Recibes tus videos, con una ronda de ajustes incluida."
-    }
+    { "titulo": "Entiendo el problema", "texto": "Hablo con quien va a usar el sistema y anoto cómo trabaja hoy y qué le estorba." },
+    { "titulo": "Diseño datos y pantallas", "texto": "Defino tablas, relaciones y flujos antes de programar, y valido el diseño con el usuario." },
+    { "titulo": "Construyo y pruebo", "texto": "Avanzo por módulos, con control de versiones en Git y pruebas de los casos importantes." },
+    { "titulo": "Publico y documento", "texto": "Despliego, capacito a quien lo usa y dejo una guía para instalar, respaldar y mantener." }
   ]
 }

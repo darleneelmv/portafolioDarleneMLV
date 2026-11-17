@@ -1,8 +1,7 @@
 {
-  "etiqueta": "Contacto",
-  "titulo": "Trabajemos junt@s",
-  "subtitulo": "Cuéntame de tu marca y te respondo con ideas para tus videos.",
+  "titulo": "¿Hay un lugar para mí en tu equipo?",
+  "subtitulo": "Busco realizar mi residencia profesional en desarrollo de software o infraestructura de TI a partir de enero de 2027. Escríbeme y con gusto platicamos.",
   "boton_copiar": "Copiar correo",
-  "boton_escribir": "Escribirme",
-  "asunto": "Colaboración UGC"
+  "boton_escribir": "Escribir correo",
+  "asunto": "Residencia profesional"
 }

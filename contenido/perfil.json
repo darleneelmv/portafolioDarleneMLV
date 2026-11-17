@@ -1,56 +1,52 @@
 {
+  "nombre": "Darlene",
+  "apellido": "López Vázquez",
+  "nombre_completo": "Darlene Mariah López Vázquez",
   "iniciales": "DL",
-  "foto": "/media/whatsapp-image-2026-11-12-at-11.19.31-am.jpeg",
-  "frase": "Contenido real que hace brillar tu marca.",
-  "boton_contacto": "Contrátame",
-  "nombre": "Darlyn",
-  "temas": [
-    "Beauty",
-    "Fitness",
-    "Lifestyle",
-    "GRWM"
-  ],
-  "usuario": "@darleneelmv_",
-  "boton_videos": "Ver mis videos",
-  "instagram": "",
-  "etiqueta": "UGC Creator · México",
-  "idioma": "Español, Ingles",
+  "rol": "Estudiante de Ingeniería en TIC. Desarrollo web full stack y nube.",
+  "disponibilidad": "Disponible para residencia profesional desde enero de 2027",
+  "saludo": "Hola, soy Darlene.",
+  "intro": "Estudio Ingeniería en Tecnologías de la Información y Comunicación y construyo sistemas completos: diseño la base de datos, programo el backend y la interfaz, y lo dejo publicado en la nube para que alguien lo use en su trabajo diario.",
+  "foto": "media/darlene.jpg",
+  "boton_1": "Ver proyectos",
+  "boton_2": "Descargar CV",
+  "cv": "cv/CV_Darlene_Lopez_Vazquez.pdf",
+  "ubicacion": "Puruándiro, Michoacán",
+  "escuela": "ITS de Puruándiro, 9.º semestre",
   "correo": "lopezvazquezdarlene@gmail.com",
-  "tiktok": "https://www.tiktok.com/@darleneelmv_",
-  "cinta1": [
-    "Contenido real",
-    "Beauty",
-    "Fitness",
-    "Lifestyle",
-    "Hecho en México",
-    "UGC"
-  ],
-  "cinta2": [
-    "Reviews",
-    "Unboxing",
-    "GRWM",
-    "Tutoriales",
-    "Antes y después",
-    "Ads"
-  ],
-  "sello": "UGC creator ✦ beauty ✦ fitness ✦ mx ✦",
-  "apellido": "Lova",
-  "stats": [
+  "telefono": "438 111 3112",
+  "whatsapp": "524381113112",
+  "github": "https://github.com/darleneelmv",
+  "linkedin": "https://www.linkedin.com/in/darlene-mariah-lopez-v%C3%A1zquez-5829a833a",
+  "ventana_titulo": "Proyectos funcionando",
+  "ventana": [
     {
-      "numero": 15.4,
-      "sufijo": "K",
-      "texto": "Seguidores en TikTok"
+      "pestana": "Strong Gym",
+      "imagen": "media/proyectos/sg-panel.jpg",
+      "texto": "Sistema de recepción, membresías y ventas para un gimnasio de Puruándiro.",
+      "etiqueta": "Cliente real",
+      "destino": "#destacado"
     },
     {
-      "numero": 191.1,
-      "sufijo": "K",
-      "texto": "Me gusta"
+      "pestana": "Agrofértil",
+      "imagen": "media/proyectos/agrofertil.jpg",
+      "texto": "Sitio web corporativo con catálogo y contacto por WhatsApp.",
+      "etiqueta": "Servicio social",
+      "destino": "#experiencia"
     },
     {
-      "numero": 336.6,
-      "sufijo": "K",
-      "texto": "Vistas · video top"
+      "pestana": "Rinconcito",
+      "imagen": "media/proyectos/rinconcito.jpg",
+      "texto": "Pedidos en línea y panel de ventas para una repostería.",
+      "etiqueta": "Proyecto personal",
+      "destino": "#proyectos"
+    },
+    {
+      "pestana": "Devil's Garage",
+      "imagen": "media/proyectos/devils-garage.jpg",
+      "texto": "Citas y órdenes de servicio para un taller de motos.",
+      "etiqueta": "Proyecto personal",
+      "destino": "#proyectos"
     }
-  ],
-  "ubicacion": "México"
+  ]
 }

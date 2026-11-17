@@ -11,58 +11,17 @@ backend:
 locale: es
 publish_mode: simple
 media_folder: media
-public_folder: /media
+public_folder: media
 site_url: /
 display_url: /
 
 collections:
   - name: sitio
-    label: "Mi sitio"
-    description: "Todo lo que se ve en tu portafolio. Al guardar (Publicar), la página se actualiza en 1 o 2 minutos."
+    label: "Mi portafolio"
+    description: "Todo lo que se ve en tu portafolio. Al dar Publicar, la página se actualiza en 1 o 2 minutos. Cada publicación gasta créditos de Netlify: junta varios cambios antes de publicar."
     editor:
       preview: false
     files:
-
-      # ------------------------------------------------------------ VIDEOS
-      - name: videos
-        label: "🎬 Videos"
-        file: contenido/videos.json
-        fields:
-          - { name: etiqueta, label: "Texto pequeño arriba", widget: string }
-          - { name: titulo, label: "Título de la sección", widget: string, hint: "Pon *palabra* entre asteriscos para que salga en cursiva rosa." }
-          - { name: subtitulo, label: "Subtítulo", widget: string, required: false }
-          - name: categorias
-            label: "Categorías"
-            label_singular: "categoría"
-            widget: list
-            summary: "{{fields.nombre}}"
-            hint: "Cada categoría es un botón redondo y un bloque de videos. Arrástralas para cambiar el orden."
-            fields:
-              - { name: nombre, label: "Nombre", widget: string }
-              - { name: texto, label: "Descripción corta", widget: string, required: false }
-              - name: estilo
-                label: "Fondo del botón"
-                widget: select
-                default: rojo
-                options:
-                  - { label: "Rojo", value: rojo }
-                  - { label: "Leopardo", value: leopardo }
-                  - { label: "Rosa", value: rosa }
-                  - { label: "Vino", value: vino }
-              - name: videos
-                label: "Videos"
-                label_singular: "video"
-                widget: list
-                summary: "{{fields.titulo}}"
-                fields:
-                  - { name: titulo, label: "Título del video", widget: string }
-                  - { name: video, label: "Video: archivo .mp4 o link de TikTok", widget: file, required: false, hint: "Opción 1: sube el video de tu galería (menos de 20 MB). Opción 2: «Insertar desde URL» y pega el link de UN video de TikTok (el que dice /video/…). Ambos se reproducen dentro del celular." }
-                  - { name: portada, label: "Portada (foto)", widget: image, required: false, hint: "Opcional. Se ve mientras carga el video." }
-                  - { name: tiktok, label: "Link del video en TikTok (opcional)", widget: string, required: false, hint: "Si subiste el archivo, aquí pon el link para que aparezca el botón de TikTok." }
-                  - { name: etiqueta, label: "Texto bajo el celular (marca o tema)", widget: string, required: false, hint: "Ej. Nivea, Hevy, Gym fits" }
-                  - { name: tipo, label: "Tipo de video", widget: string, required: false, hint: "Ej. Reseña, Unboxing, GRWM" }
-                  - { name: vistas, label: "Vistas", widget: string, required: false, hint: "Ej. 23.9K. Déjalo vacío si no quieres mostrarlas." }
-                  - { name: palabra, label: "Palabra grande (si aún no hay video)", widget: string, required: false }
 
       # ------------------------------------------------------------ PERFIL
       - name: perfil
@@ -70,77 +29,186 @@ collections:
         file: contenido/perfil.json
         fields:
           - { name: nombre, label: "Nombre", widget: string }
-          - { name: apellido, label: "Segunda palabra del nombre (sale con leopardo)", widget: string, required: false }
-          - { name: iniciales, label: "Iniciales del sello", widget: string, required: false }
-          - { name: foto, label: "Foto principal", widget: image, required: false, hint: "Vertical, con buena luz. Se recorta en forma de arco." }
-          - { name: etiqueta, label: "Texto pequeño arriba del nombre", widget: string }
-          - { name: frase, label: "Frase", widget: string }
-          - { name: temas, label: "Temas (chips)", widget: list, field: { name: tema, label: "Tema", widget: string } }
-          - { name: boton_videos, label: "Botón 1", widget: string }
-          - { name: boton_contacto, label: "Botón 2", widget: string }
-          - name: stats
-            label: "Números"
-            label_singular: "número"
-            widget: list
-            summary: "{{fields.numero}}{{fields.sufijo}} {{fields.texto}}"
-            fields:
-              - { name: numero, label: "Número", widget: number, value_type: float }
-              - { name: sufijo, label: "Sufijo (K, M, %)", widget: string, required: false }
-              - { name: texto, label: "Texto", widget: string }
-          - { name: sello, label: "Texto del sello que gira", widget: string, required: false, hint: "Que no sea muy largo (unas 30 letras)." }
-          - { name: cinta1, label: "Cinta roja", widget: list, field: { name: palabra, label: "Palabra", widget: string } }
-          - { name: cinta2, label: "Cinta de leopardo", widget: list, field: { name: palabra, label: "Palabra", widget: string } }
-          - { name: usuario, label: "Usuario de TikTok", widget: string }
-          - { name: tiktok, label: "Link de tu TikTok", widget: string, required: false }
-          - { name: instagram, label: "Link de tu Instagram", widget: string, required: false, hint: "Déjalo vacío para no mostrarlo." }
-          - { name: correo, label: "Correo para colaboraciones", widget: string }
+          - { name: apellido, label: "Apellidos", widget: string }
+          - { name: nombre_completo, label: "Nombre completo", widget: string, required: false }
+          - { name: iniciales, label: "Iniciales (logo)", widget: string, required: false }
+          - { name: disponibilidad, label: "Aviso de disponibilidad", widget: string, required: false, hint: "Déjalo vacío para ocultarlo." }
+          - { name: saludo, label: "Saludo grande", widget: string, hint: "Tu nombre debe aparecer aquí para que la foto salga junto a él." }
+          - { name: rol, label: "Rol (debajo del saludo)", widget: string }
+          - { name: intro, label: "Presentación breve", widget: text }
+          - { name: foto, label: "Foto (sale junto a tu nombre)", widget: image, required: false }
+          - { name: boton_1, label: "Botón 1", widget: string }
+          - { name: boton_2, label: "Botón 2 (descarga el CV)", widget: string }
+          - { name: cv, label: "CV en PDF", widget: file, required: false, hint: "Sube tu CV actualizado en PDF." }
           - { name: ubicacion, label: "Ubicación", widget: string, required: false }
-          - { name: idioma, label: "Idiomas", widget: string, required: false }
+          - { name: escuela, label: "Escuela y semestre", widget: string, required: false }
+          - { name: correo, label: "Correo", widget: string }
+          - { name: telefono, label: "Teléfono (como se muestra)", widget: string, required: false }
+          - { name: whatsapp, label: "WhatsApp (con 52, solo números)", widget: string, required: false }
+          - { name: github, label: "Link de GitHub", widget: string, required: false }
+          - { name: linkedin, label: "Link de LinkedIn", widget: string, required: false }
+          - { name: ventana_titulo, label: "Título interno de la ventana", widget: string, required: false }
+          - name: ventana
+            label: "Pestañas de la ventana de proyectos"
+            label_singular: "pestaña"
+            widget: list
+            summary: "{{fields.pestana}}"
+            fields:
+              - { name: pestana, label: "Nombre de la pestaña", widget: string }
+              - { name: imagen, label: "Captura", widget: image }
+              - { name: texto, label: "Descripción corta", widget: string }
+              - { name: etiqueta, label: "Etiqueta", widget: string, required: false, hint: "Ej. Cliente real, Servicio social, Proyecto personal" }
+              - { name: destino, label: "Link de «Ver más»", widget: string, required: false, hint: "#destacado, #experiencia, #proyectos o un link completo" }
+
+      # ------------------------------------------------------------ EXPERIENCIA
+      - name: experiencia
+        label: "💼 Experiencia"
+        file: contenido/experiencia.json
+        fields:
+          - { name: titulo, label: "Título", widget: string }
+          - { name: subtitulo, label: "Subtítulo", widget: string, required: false }
+          - name: puestos
+            label: "Experiencias"
+            label_singular: "experiencia"
+            widget: list
+            summary: "{{fields.organizacion}} · {{fields.periodo}}"
+            hint: "La primera es la más reciente. Si el periodo dice «En curso», el punto sale en rosa."
+            fields:
+              - { name: organizacion, label: "Empresa o negocio", widget: string }
+              - { name: puesto, label: "Puesto o tipo", widget: string }
+              - { name: periodo, label: "Periodo", widget: string, hint: "Ej. Ago – Dic 2026, En curso" }
+              - { name: lugar, label: "Lugar", widget: string, required: false }
+              - { name: descripcion, label: "Descripción", widget: text }
+              - { name: logros, label: "Logros", widget: list, field: { name: logro, label: "Logro", widget: text } }
+              - { name: tecnologias, label: "Tecnologías", widget: list, field: { name: tec, label: "Tecnología", widget: string } }
+              - { name: imagen, label: "Captura", widget: image, required: false }
+              - { name: pie_imagen, label: "Texto bajo la captura", widget: string, required: false }
+              - { name: link, label: "Link", widget: string, required: false }
+              - { name: link_texto, label: "Texto del link", widget: string, required: false }
+
+      # ------------------------------------------------------------ CASO DESTACADO
+      - name: destacado
+        label: "⭐ Caso destacado (Strong Gym)"
+        file: contenido/destacado.json
+        fields:
+          - { name: titulo, label: "Título", widget: string }
+          - { name: contexto, label: "El reto", widget: text }
+          - { name: solucion, label: "Lo que hice", widget: text }
+          - name: capturas
+            label: "Capturas"
+            label_singular: "captura"
+            widget: list
+            summary: "{{fields.pie}}"
+            fields:
+              - { name: imagen, label: "Imagen", widget: image }
+              - { name: pie, label: "Descripción", widget: string }
+          - name: funciones
+            label: "Funciones"
+            label_singular: "función"
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: titulo, label: "Título", widget: string }
+              - { name: texto, label: "Texto", widget: text }
+          - name: ficha
+            label: "Ficha técnica"
+            widget: list
+            summary: "{{fields.dato}}"
+            fields:
+              - { name: dato, label: "Dato", widget: string }
+              - { name: valor, label: "Valor", widget: string }
+          - { name: nota, label: "Nota", widget: string, required: false }
+          - { name: link, label: "Link", widget: string, required: false }
+          - { name: link_texto, label: "Texto del botón", widget: string, required: false }
+
+      # ------------------------------------------------------------ PROYECTOS
+      - name: proyectos
+        label: "🧩 Proyectos personales"
+        file: contenido/proyectos.json
+        fields:
+          - { name: titulo, label: "Título", widget: string }
+          - { name: subtitulo, label: "Subtítulo", widget: string, required: false }
+          - name: proyectos
+            label: "Proyectos"
+            label_singular: "proyecto"
+            widget: list
+            summary: "{{fields.nombre}}"
+            fields:
+              - { name: nombre, label: "Nombre", widget: string }
+              - { name: resumen, label: "Resumen (una línea)", widget: string }
+              - { name: descripcion, label: "Qué hace (se abre al tocar)", widget: text, required: false }
+              - { name: categorias, label: "Categorías (para los filtros)", widget: list, field: { name: cat, label: "Categoría", widget: string }, hint: "Usa siempre los mismos nombres: Web, Full stack, Nube e IA, Bases de datos…" }
+              - { name: tecnologias, label: "Tecnologías", widget: list, field: { name: tec, label: "Tecnología", widget: string } }
+              - { name: imagen, label: "Captura", widget: image, required: false, hint: "Si no hay captura, se muestra el texto de «Código de vista previa»." }
+              - { name: codigo, label: "Código de vista previa", widget: text, required: false, hint: "Unas líneas de endpoints, SQL o comandos." }
+              - { name: demo, label: "Link en vivo", widget: string, required: false }
+              - { name: repo, label: "Link del código (GitHub)", widget: string, required: false }
+
+      # ------------------------------------------------------------ HABILIDADES
+      - name: habilidades
+        label: "🛠️ Habilidades y formación"
+        file: contenido/habilidades.json
+        fields:
+          - { name: titulo, label: "Título", widget: string }
+          - name: grupos
+            label: "Grupos de habilidades"
+            label_singular: "grupo"
+            widget: list
+            summary: "{{fields.nombre}}"
+            fields:
+              - { name: nombre, label: "Grupo", widget: string }
+              - { name: items, label: "Habilidades", widget: list, field: { name: item, label: "Habilidad", widget: string } }
+          - name: educacion
+            label: "Formación"
+            widget: object
+            fields:
+              - { name: carrera, label: "Carrera", widget: string }
+              - { name: escuela, label: "Escuela", widget: string }
+              - { name: periodo, label: "Periodo", widget: string }
+              - { name: materias, label: "Materias destacadas", widget: text, required: false }
+          - name: certificaciones
+            label: "Certificaciones y cursos"
+            label_singular: "certificación"
+            widget: list
+            summary: "{{fields.nombre}}"
+            fields:
+              - { name: nombre, label: "Nombre", widget: string }
+              - { name: emisor, label: "Quién la emite", widget: string }
+              - { name: fecha, label: "Fecha", widget: string, required: false }
+          - name: idiomas
+            label: "Idiomas"
+            widget: list
+            summary: "{{fields.idioma}}"
+            fields:
+              - { name: idioma, label: "Idioma", widget: string }
+              - { name: nivel, label: "Nivel", widget: string }
 
       # ------------------------------------------------------------ SOBRE MÍ
       - name: sobre_mi
-        label: "💌 Sobre mí"
+        label: "💬 Sobre mí"
         file: contenido/sobre-mi.json
         fields:
-          - { name: etiqueta, label: "Texto pequeño", widget: string }
-          - { name: titulo, label: "Título", widget: string, hint: "Pon *palabra* entre asteriscos para la cursiva rosa." }
+          - { name: titulo, label: "Título", widget: string }
           - { name: parrafos, label: "Párrafos", widget: list, field: { name: parrafo, label: "Párrafo", widget: text } }
           - name: fotos
-            label: "Fotos tipo polaroid (2)"
+            label: "Fotos (2)"
             widget: list
             max: 2
             summary: "{{fields.pie}}"
             fields:
-              - { name: foto, label: "Foto", widget: image, required: false }
-              - { name: palabra, label: "Palabra si no hay foto", widget: string, required: false }
+              - { name: foto, label: "Foto", widget: image }
               - { name: pie, label: "Texto abajo de la foto", widget: string, required: false }
+          - { name: intereses_titulo, label: "Título de intereses", widget: string }
+          - { name: intereses, label: "Intereses", widget: list, field: { name: interes, label: "Interés", widget: string } }
+          - { name: aprender_titulo, label: "Título de «quiero aprender»", widget: string }
+          - { name: aprender, label: "Lo que quiero aprender", widget: list, field: { name: tema, label: "Tema", widget: string } }
 
-      # ------------------------------------------------------------ SERVICIOS
-      - name: servicios
-        label: "🃏 Servicios"
-        file: contenido/servicios.json
+      # ------------------------------------------------------------ LO QUE APORTO
+      - name: aporto
+        label: "✨ Lo que aporto"
+        file: contenido/aporto.json
         fields:
-          - { name: etiqueta, label: "Texto pequeño", widget: string }
-          - { name: titulo, label: "Título", widget: string }
-          - { name: subtitulo, label: "Subtítulo", widget: text, required: false }
-          - name: cartas
-            label: "Cartas"
-            label_singular: "carta"
-            widget: list
-            summary: "{{fields.indice}}{{fields.palo}} {{fields.titulo}}"
-            fields:
-              - { name: indice, label: "Letra o número de la carta", widget: string, hint: "A, K, Q, J, 10…" }
-              - { name: palo, label: "Palo", widget: select, options: ["♦", "♥", "♠", "♣"], default: "♦" }
-              - { name: titulo, label: "Servicio", widget: string }
-              - { name: texto, label: "Descripción", widget: text }
-              - { name: roja, label: "Carta roja", widget: boolean, default: false }
-
-      # ------------------------------------------------------------ POR QUÉ YO
-      - name: por_que_yo
-        label: "✨ ¿Por qué yo?"
-        file: contenido/por-que-yo.json
-        fields:
-          - { name: cita, label: "Frase grande", widget: text, hint: "Pon *palabras* entre asteriscos para resaltarlas en rosa." }
+          - { name: cita, label: "Frase grande", widget: text }
           - name: razones
             label: "Razones"
             label_singular: "razón"
@@ -152,10 +220,9 @@ collections:
 
       # ------------------------------------------------------------ PROCESO
       - name: proceso
-        label: "🧭 Cómo trabajamos"
+        label: "🧭 Cómo trabajo"
         file: contenido/proceso.json
         fields:
-          - { name: etiqueta, label: "Texto pequeño", widget: string }
           - { name: titulo, label: "Título", widget: string }
           - name: pasos
             label: "Pasos"
@@ -166,33 +233,13 @@ collections:
               - { name: titulo, label: "Paso", widget: string }
               - { name: texto, label: "Texto", widget: text }
 
-      # ------------------------------------------------------------ MARCAS
-      - name: marcas
-        label: "🏷️ Marcas"
-        file: contenido/marcas.json
-        fields:
-          - { name: etiqueta, label: "Texto pequeño", widget: string }
-          - { name: titulo, label: "Título", widget: string }
-          - name: marcas
-            label: "Marcas con las que has trabajado"
-            label_singular: "marca"
-            widget: list
-            required: false
-            hint: "Mientras esta lista esté vacía, la sección no aparece en tu página."
-            summary: "{{fields.nombre}}"
-            fields:
-              - { name: nombre, label: "Nombre", widget: string }
-              - { name: logo, label: "Logo", widget: image, required: false }
-              - { name: link, label: "Link (opcional)", widget: string, required: false }
-
       # ------------------------------------------------------------ CONTACTO
       - name: contacto
         label: "📩 Contacto"
         file: contenido/contacto.json
         fields:
-          - { name: etiqueta, label: "Texto pequeño", widget: string }
           - { name: titulo, label: "Título", widget: string }
-          - { name: subtitulo, label: "Subtítulo", widget: string }
+          - { name: subtitulo, label: "Subtítulo", widget: text }
           - { name: boton_copiar, label: "Botón copiar", widget: string }
           - { name: boton_escribir, label: "Botón escribir", widget: string }
           - { name: asunto, label: "Asunto del correo", widget: string }
@@ -206,21 +253,22 @@ collections:
             label: "Secciones visibles"
             widget: object
             fields:
+              - { name: experiencia, label: "Experiencia", widget: boolean, default: true }
+              - { name: destacado, label: "Caso destacado", widget: boolean, default: true }
+              - { name: proyectos, label: "Proyectos personales", widget: boolean, default: true }
+              - { name: habilidades, label: "Habilidades y formación", widget: boolean, default: true }
               - { name: sobre, label: "Sobre mí", widget: boolean, default: true }
-              - { name: portafolio, label: "Videos", widget: boolean, default: true }
-              - { name: servicios, label: "Servicios", widget: boolean, default: true }
-              - { name: porque, label: "¿Por qué yo?", widget: boolean, default: true }
-              - { name: proceso, label: "Cómo trabajamos", widget: boolean, default: true }
-              - { name: marcas, label: "Marcas", widget: boolean, default: true }
+              - { name: aporto, label: "Lo que aporto", widget: boolean, default: true }
+              - { name: proceso, label: "Cómo trabajo", widget: boolean, default: true }
               - { name: contacto, label: "Contacto", widget: boolean, default: true }
           - name: colores
             label: "Colores"
             widget: object
             fields:
-              - { name: rojo, label: "Rojo principal", widget: color }
-              - { name: rosa, label: "Rosa", widget: color }
-              - { name: fondo, label: "Fondo oscuro", widget: color }
-              - { name: leopardo, label: "Tono del leopardo", widget: color }
+              - { name: tinta, label: "Texto y sección oscura", widget: color }
+              - { name: petroleo, label: "Color principal", widget: color }
+              - { name: acento, label: "Acento (rosa)", widget: color }
+              - { name: fondo, label: "Fondo", widget: color }
           - { name: boton_barra, label: "Botón de la barra de arriba", widget: string }
           - { name: pie, label: "Texto del pie de página", widget: string }
           - name: seo

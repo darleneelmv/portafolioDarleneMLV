@@ -1,0 +1,57 @@
+{
+  "titulo": "Experiencia",
+  "subtitulo": "Proyectos que hice para empresas y negocios reales.",
+  "puestos": [
+    {
+      "organizacion": "Gold's Gym",
+      "puesto": "Prácticas profesionales · Desarrollo de software",
+      "periodo": "En curso",
+      "lugar": "Michoacán",
+      "descripcion": "Adapto a Gold's Gym el sistema de gestión que desarrollé para Strong Gym, para que su recepción controle accesos, membresías y ventas desde un solo lugar.",
+      "logros": [
+        "Adaptación de membresías, roles de usuario y control de acceso con código QR a su forma de trabajar.",
+        "Punto de venta e inventario configurados para sus productos y servicios.",
+        "Preparación del despliegue en la nube con Docker y sincronización con la computadora de recepción."
+      ],
+      "tecnologias": ["Node.js", "JavaScript", "SQLite", "Docker"],
+      "imagen": "media/proyectos/sg-acceso.jpg",
+      "pie_imagen": "Pantalla de acceso del sistema base",
+      "link": "",
+      "link_texto": ""
+    },
+    {
+      "organizacion": "Agrofértil y Equipos",
+      "puesto": "Servicio social · Desarrollo web",
+      "periodo": "Servicio social",
+      "lugar": "Michoacán",
+      "descripcion": "Desarrollé el sitio web de una empresa de insumos y equipo para el campo, que hoy está publicado en su dominio propio.",
+      "logros": [
+        "Catálogo de productos organizado por categorías.",
+        "Contacto directo por WhatsApp desde cada sección.",
+        "Diseño adaptado a celular, porque la mayoría de sus clientes entra desde el teléfono."
+      ],
+      "tecnologias": ["HTML", "CSS", "JavaScript", "Dominio y hosting"],
+      "imagen": "media/proyectos/agrofertil.jpg",
+      "pie_imagen": "agrofertil.com.mx",
+      "link": "https://agrofertil.com.mx",
+      "link_texto": "Visitar agrofertil.com.mx"
+    },
+    {
+      "organizacion": "Strong Gym Puruándiro",
+      "puesto": "Desarrollo full stack · Proyecto para cliente",
+      "periodo": "2026",
+      "lugar": "Puruándiro, Michoacán",
+      "descripcion": "Diseñé y programé el sitio web y el sistema de administración del gimnasio, desde la base de datos hasta la instalación en recepción.",
+      "logros": [
+        "Acceso de socios con credencial QR, foto y aviso de membresía vencida.",
+        "Funciona sin internet y se sincroniza con la nube cada 60 segundos.",
+        "Roles de administrador, dueño (solo lectura) y portal del socio; respaldos diarios y pruebas automáticas."
+      ],
+      "tecnologias": ["Node.js", "SQLite", "Docker", "PWA"],
+      "imagen": "media/proyectos/sg-sitio.jpg",
+      "pie_imagen": "Sitio web público del gimnasio",
+      "link": "#destacado",
+      "link_texto": "Ver el caso completo"
+    }
+  ]
+}

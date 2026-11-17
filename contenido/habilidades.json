@@ -1,0 +1,27 @@
+{
+  "titulo": "Habilidades y formación",
+  "grupos": [
+    { "nombre": "Lenguajes", "items": ["JavaScript", "TypeScript", "C#", "Java", "Python", "SQL", "PHP", "C/C++", "Kotlin"] },
+    { "nombre": "Desarrollo web", "items": ["Node.js", "React", "ASP.NET Core / MVC", "APIs REST", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"] },
+    { "nombre": "Bases de datos", "items": ["SQL Server", "MySQL", "SQLite"] },
+    { "nombre": "Nube y sistemas", "items": ["Fundamentos de AWS", "Docker", "Linux", "Netlify", "Render", "Cloudflare Workers", "APIs de Google y Gemini"] },
+    { "nombre": "Redes y seguridad", "items": ["Modelo OSI y TCP/IP", "Subnetting y VLANs", "Routers y switches", "Redes inalámbricas", "Fundamentos de ciberseguridad"] },
+    { "nombre": "Herramientas", "items": ["Git y GitHub", "Visual Studio", "VS Code", "Postman", "Cisco Packet Tracer", "Android Studio", "Arduino", "Scrum"] }
+  ],
+  "educacion": {
+    "carrera": "Ingeniería en Tecnologías de la Información y Comunicación",
+    "escuela": "Instituto Tecnológico Superior de Puruándiro",
+    "periodo": "9.º semestre · egreso en diciembre de 2026",
+    "materias": "Programación Web, Bases de Datos Distribuidas, Ingeniería de Software, Aplicaciones Móviles, Administración y Seguridad de Redes, Inteligencia Artificial, Big Data e IoT."
+  },
+  "certificaciones": [
+    { "nombre": "Cybersecurity & AI for the CISO, Third Generation", "emisor": "WomenCISO · Epic Lab ITAM", "fecha": "Jun 2025" },
+    { "nombre": "AWS Cloud Practitioner Essentials", "emisor": "Impulsando Talento Mexicano · AWS", "fecha": "Abr 2024" },
+    { "nombre": "Fundamentos de Nube AWS: ¿Qué es la nube?", "emisor": "Impulsando Talento Mexicano · AWS", "fecha": "Abr 2024" },
+    { "nombre": "Computer Network", "emisor": "Huawei ICT Academy", "fecha": "" }
+  ],
+  "idiomas": [
+    { "idioma": "Español", "nivel": "Nativo" },
+    { "idioma": "Inglés", "nivel": "Intermedio" }
+  ]
+}

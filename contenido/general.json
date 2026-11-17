@@ -1,23 +1,24 @@
 {
   "seo": {
-    "titulo": "Darlyn Lova · UGC Creator MX",
-    "descripcion": "UGC Creator en México. Beauty, fitness y lifestyle. Contenido real que hace brillar tu marca."
+    "titulo": "Darlene López Vázquez · Ingeniería en TIC · Desarrollo web y nube",
+    "descripcion": "Portafolio de Darlene López Vázquez, estudiante de Ingeniería en TIC. Sistemas web full stack, bases de datos y despliegue en la nube. Disponible para residencia profesional desde enero de 2027."
   },
   "colores": {
-    "rojo": "#c3122b",
-    "rosa": "#f3a7c1",
-    "fondo": "#14040a",
-    "leopardo": "#c8945a"
+    "tinta": "#10262e",
+    "petroleo": "#1f6377",
+    "acento": "#d9486f",
+    "fondo": "#eef2f1"
   },
   "secciones": {
+    "experiencia": true,
+    "destacado": true,
+    "proyectos": true,
+    "habilidades": true,
     "sobre": true,
-    "portafolio": true,
-    "servicios": true,
-    "porque": true,
+    "aporto": true,
     "proceso": true,
-    "marcas": true,
     "contacto": true
   },
-  "boton_barra": "Trabajemos juntas",
-  "pie": "UGC Creator · Beauty · Fitness · Lifestyle · México"
+  "boton_barra": "Descargar CV",
+  "pie": "Darlene López Vázquez · Ingeniería en TIC · Puruándiro, Michoacán"
 }
