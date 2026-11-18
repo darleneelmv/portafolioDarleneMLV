@@ -173,6 +173,8 @@ function pintar(D) {
   txt("#d-nota", X.nota);
   const dl = $("#d-link");
   if (X.link) { dl.href = X.link; dl.innerHTML = `${esc(X.link_texto || "Ver proyecto")} ${ICO.externo}`; } else dl.hidden = true;
+  lista(X.links_extra).filter(l => l.url).forEach(l => dl.insertAdjacentHTML("afterend",
+    `<a class="enlace" style="display:block;color:#fff;margin-top:1rem" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.texto)} ${ICO.externo}</a>`));
 
   /* Proyectos personales */
   txt("#p-titulo", PR.titulo); txt("#p-sub", PR.subtitulo);

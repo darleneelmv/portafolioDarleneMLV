@@ -6,7 +6,7 @@
   "rol": "Estudiante de Ingeniería en TIC. Desarrollo web full stack y nube.",
   "disponibilidad": "Disponible para residencia profesional desde enero de 2027",
   "saludo": "Hola, soy Darlene.",
-  "intro": "Estudio Ingeniería en Tecnologías de la Información y Comunicación y construyo sistemas completos: diseño la base de datos, programo el backend y la interfaz, y los dejo funcionando en la nube. Mi proyecto principal hoy lo usan dos gimnasios.",
+  "intro": "Estudio Ingeniería en Tecnologías de la Información y Comunicación y construyo sistemas completos: diseño la base de datos, programo el backend y la interfaz, y los dejo funcionando en la nube. Mi proyecto principal hoy está en uso en un gimnasio de Puruándiro.",
   "foto": "media/darlene-principal.jpg",
   "boton_1": "Ver proyectos",
   "boton_2": "Descargar CV",
@@ -22,7 +22,7 @@
     {
       "pestana": "Strong Gym",
       "imagen": "media/proyectos/sg-panel.jpg",
-      "texto": "Sistema integral de gestión en uso en Strong Gym y Gold's Gym Puruándiro.",
+      "texto": "Sistema integral de gestión en uso en Strong Gym Puruándiro.",
       "etiqueta": "Cliente real",
       "destino": "#destacado"
     },

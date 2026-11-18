@@ -3,16 +3,16 @@
   "parrafos": [
     "Soy de Puruándiro, Michoacán, y estoy por terminar Ingeniería en TIC. Lo que más disfruto es ver algo que hice funcionando en un negocio de verdad: la recepción de un gimnasio escaneando credenciales o una repostería recibiendo pedidos por WhatsApp.",
     "Aprendo construyendo. Si algo no lo sé, lo investigo, lo pruebo y lo documento para que otra persona pueda usarlo sin depender de mí. Me importa que lo que entrego sea fácil de usar para quien no es técnico.",
-    "Me gusta conocer cómo trabajan los equipos de tecnología por dentro, como en mi visita a las oficinas de Google en la Ciudad de México. Fuera del código entreno y creo contenido digital, lo que me ha ayudado a explicar ideas con claridad."
+    "Me gusta conocer cómo trabajan los equipos de tecnología por dentro: gracias al curso Cybersecurity & AI for the CISO de WomenCISO visité las oficinas de Google en la Ciudad de México. Fuera del código entreno y creo contenido digital, lo que me ha ayudado a explicar ideas con claridad."
   ],
   "fotos": [
     {
       "foto": "media/google-2.jpg",
-      "pie": "Oficinas de Google, Ciudad de México"
+      "pie": "Oficinas de Google, CDMX · curso WomenCISO"
     },
     {
       "foto": "media/google-1.jpg",
-      "pie": "Conociendo cómo trabajan los equipos de tecnología"
+      "pie": "Visita con WomenCISO · Epic Lab ITAM"
     }
   ],
   "intereses_titulo": "Me interesa",

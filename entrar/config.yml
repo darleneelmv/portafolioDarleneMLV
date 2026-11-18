@@ -140,6 +140,14 @@ collections:
           - { name: nota, label: "Nota", widget: string, required: false }
           - { name: link, label: "Link", widget: string, required: false }
           - { name: link_texto, label: "Texto del botón", widget: string, required: false }
+          - name: links_extra
+            label: "Otros links"
+            widget: list
+            required: false
+            summary: "{{fields.texto}}"
+            fields:
+              - { name: texto, label: "Texto", widget: string }
+              - { name: url, label: "Link", widget: string }
 
       # ------------------------------------------------------------ PROYECTOS
       - name: proyectos

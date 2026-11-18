@@ -384,7 +384,7 @@ body:not(.con-intro) .intro { display: none; }
   .puesto { grid-template-columns: 1fr; }
   .caso-intro { grid-template-columns: 1fr; }
   .galeria { grid-template-columns: 1fr; }
-  .galeria-miniaturas { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .45rem; }
+  .galeria-miniaturas { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .45rem; }
   .arquitectura { grid-template-columns: 1fr; justify-items: stretch; }
   .flujo { justify-self: center; }
   .flujo i { width: 2px; height: 46px; }

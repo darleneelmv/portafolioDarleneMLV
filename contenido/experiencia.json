@@ -21,29 +21,21 @@
         "Python",
         "Netlify Functions"
       ],
-      "imagen": "media/proyectos/sg-sitio.jpg",
-      "pie_imagen": "Página web pública del gimnasio",
-      "link": "https://strong-gym-puruandiro.netlify.app/",
-      "link_texto": "Ver la página de Strong Gym"
+      "imagen": "media/proyectos/strongweb.jpg",
+      "pie_imagen": "Página promocional del gym, con fotos y productos reales",
+      "link": "https://darleneelmv.github.io/StrongWeb/",
+      "link_texto": "Ver la página del gym"
     },
     {
       "organizacion": "Gold's Gym Puruándiro",
-      "puesto": "Prácticas profesionales · Implementación del sistema",
-      "periodo": "En curso",
+      "puesto": "Prácticas profesionales",
+      "periodo": "Próximamente",
       "lugar": "Puruándiro, Michoacán",
-      "descripcion": "Después de su implementación en Strong Gym, el sistema fue adoptado por un segundo cliente. En mis prácticas profesionales lo implemento y adapto a la operación de Gold's Gym.",
-      "logros": [
-        "Configuración de membresías, usuarios y control de acceso con QR para su recepción.",
-        "Adaptación del punto de venta, inventario y promociones a sus productos y servicios."
-      ],
-      "tecnologias": [
-        "Node.js",
-        "PostgreSQL",
-        "Supabase",
-        "Python"
-      ],
-      "imagen": "media/proyectos/sg-acceso.jpg",
-      "pie_imagen": "Pantalla de acceso del sistema",
+      "descripcion": "Próximo proyecto: implementar en Gold's Gym el sistema de gestión que desarrollamos para Strong Gym.",
+      "logros": [],
+      "tecnologias": [],
+      "imagen": "",
+      "pie_imagen": "",
       "link": "",
       "link_texto": ""
     },

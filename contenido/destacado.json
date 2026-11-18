@@ -24,8 +24,8 @@
       "texto": "Arquitectura híbrida local + nube con sincronización automática mediante un servicio en Python."
     },
     {
-      "titulo": "Segundo cliente",
-      "texto": "Tras su implementación, Gold's Gym Puruándiro también adoptó el sistema."
+      "titulo": "Página web incluida",
+      "texto": "La página pública muestra planes, promociones y productos que se editan desde el sistema."
     }
   ],
   "ficha": [
@@ -72,13 +72,17 @@
       "pie": "Clientes con filtros por estado e impresión de credenciales."
     },
     {
+      "imagen": "media/proyectos/strongweb.jpg",
+      "pie": "Página promocional con la fachada, malteadas y productos reales del gym."
+    },
+    {
       "imagen": "media/proyectos/sg-sitio.jpg",
       "pie": "Sitio web público, editable desde el sistema."
     }
   ],
   "nota": "Las capturas usan datos de demostración.",
   "link": "https://strong-gym-puruandiro.netlify.app/",
-  "link_texto": "Ver la página de Strong Gym",
+  "link_texto": "Ver el sitio del sistema",
   "numeros": [
     {
       "numero": 20,
@@ -89,13 +93,19 @@
       "texto": "servicios en la API"
     },
     {
-      "numero": 2,
-      "texto": "gimnasios lo usan hoy"
+      "numero": 3,
+      "texto": "roles: recepción, dueño y socio"
     }
   ],
   "arquitectura": {
     "local": "Recepción del gym. Funciona sin internet, con lector QR y base local.",
     "flujo": "Sincronización automática (Python)",
     "nube": "PostgreSQL en Supabase y Netlify Functions. Panel del dueño y portal del socio."
-  }
+  },
+  "links_extra": [
+    {
+      "texto": "Página promocional",
+      "url": "https://darleneelmv.github.io/StrongWeb/"
+    }
+  ]
 }
