@@ -90,6 +90,10 @@ function pintar(D) {
     `${letras(saludo.slice(0, k), .1)}<span class="nombre">${letras(saludo.slice(k, k + P.nombre.length), .1 + k * .035)}</span>${letras(saludo.slice(k + P.nombre.length), .1 + (k + P.nombre.length) * .035)}`);
   $("#h-saludo").setAttribute("aria-label", saludo);
   txt("#h-rol", P.rol); txt("#h-intro", P.intro);
+  /* Idiomas visibles desde el inicio (primero los que no son nativos) */
+  const idi = lista(H.idiomas).slice().sort((a, b) => (/nativo/i.test(a.nivel) ? 1 : 0) - (/nativo/i.test(b.nivel) ? 1 : 0));
+  htm("#h-idiomas", idi.map(i => `<li class="${/nativo/i.test(i.nivel) ? "" : "destaca"}"><b>${esc(i.idioma)}</b><span>${esc(i.nivel)}</span></li>`).join(""));
+  $("#h-idiomas").hidden = !idi.length;
   txt("#h-btn1", P.boton_1 || "Ver proyectos");
   htm("#h-datos", [
     P.ubicacion && `<li>${ICO.ubicacion}${esc(P.ubicacion)}</li>`,
